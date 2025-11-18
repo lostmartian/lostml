@@ -17,22 +17,39 @@ lostml is a Python machine learning library that implements core ML algorithms f
 - **Clean, readable code** - Well-documented and easy to follow
 - **From scratch** - No reliance on high-level ML frameworks for core algorithms
 
-Features
---------
+Algorithm Roadmap
+-----------------
+
+Implemented ✅
+~~~~~~~~~~~~~~
 
 **Linear Models**
-   - Linear Regression
-   - Ridge Regression (L2 regularization)
-   - Lasso Regression (L1 regularization)
-   - Elastic Net (L1 + L2 regularization)
+   - ✅ Linear Regression
+   - ✅ Ridge Regression (L2 regularization)
+   - ✅ Lasso Regression (L1 regularization)
+   - ✅ Elastic Net (L1 + L2 regularization)
 
 **Classification**
-   - Logistic Regression
-   - K-Nearest Neighbors (KNN)
+   - ✅ Logistic Regression
+   - ✅ K-Nearest Neighbors (KNN)
 
 **Utilities**
-   - Distance metrics (Euclidean, Manhattan)
-   - Evaluation metrics (coming soon)
+   - ✅ Distance metrics (Euclidean, Manhattan)
+
+Coming Soon 🚧
+~~~~~~~~~~~~~
+
+**Tree-Based Models**
+   - ⏳ Decision Tree (Classification & Regression)
+   - ⏳ Random Forest (Classification & Regression)
+
+**Unsupervised Learning**
+   - ⏳ K-Means Clustering
+   - ⏳ PCA (Principal Component Analysis)
+
+**Additional Algorithms**
+   - ⏳ Naive Bayes
+   - ⏳ Support Vector Machine (SVM)
 
 Quick Example
 -------------
@@ -66,6 +83,7 @@ Documentation Contents
 
    installation
    quickstart
+   roadmap
 
 .. toctree::
    :maxdepth: 2

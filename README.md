@@ -32,9 +32,34 @@ pip install -e .
 
 ## ✨ What's Inside
 
-- **Linear Models**: Linear Regression, Ridge, Lasso, Elastic Net
-- **Classification**: Logistic Regression, K-Nearest Neighbors  
-- **Utilities**: Distance metrics, evaluation metrics
+### Implemented ✅
+
+**Linear Models**
+- ✅ Linear Regression
+- ✅ Ridge Regression (L2 regularization)
+- ✅ Lasso Regression (L1 regularization)
+- ✅ Elastic Net (L1 + L2 regularization)
+
+**Classification**
+- ✅ Logistic Regression
+- ✅ K-Nearest Neighbors (KNN)
+
+**Utilities**
+- ✅ Distance metrics (Euclidean, Manhattan)
+
+### Coming Soon 🚧
+
+**Tree-Based Models**
+- ⏳ Decision Tree (Classification & Regression)
+- ⏳ Random Forest (Classification & Regression)
+
+**Unsupervised Learning**
+- ⏳ K-Means Clustering
+- ⏳ PCA (Principal Component Analysis)
+
+**Additional Algorithms**
+- ⏳ Naive Bayes
+- ⏳ Support Vector Machine (SVM)
 
 ## 📚 Documentation
 
