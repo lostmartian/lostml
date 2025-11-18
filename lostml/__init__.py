@@ -12,6 +12,7 @@ from .linear_models import (
     ElasticNet,
     LogisticRegression,
 )
+from .tree import DecisionTree
 
 __all__ = [
     "LinearRegression",
@@ -19,6 +20,7 @@ __all__ = [
     "LassoRegression",
     "ElasticNet",
     "LogisticRegression",
+    "DecisionTree",
 ]
 
 __version__ = "0.1.0"

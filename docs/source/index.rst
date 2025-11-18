@@ -33,6 +33,9 @@ Implemented ✅
    - ✅ Logistic Regression
    - ✅ K-Nearest Neighbors (KNN)
 
+**Tree-Based Models**
+   - ✅ Decision Tree (Classification & Regression)
+
 **Utilities**
    - ✅ Distance metrics (Euclidean, Manhattan)
 
@@ -40,7 +43,6 @@ Coming Soon 🚧
 ~~~~~~~~~~~~~
 
 **Tree-Based Models**
-   - ⏳ Decision Tree (Classification & Regression)
    - ⏳ Random Forest (Classification & Regression)
 
 **Unsupervised Learning**
@@ -60,6 +62,7 @@ Here's a quick taste of what lostml can do:
 
    from lostml import LinearRegression
    from lostml.neighbors import KNN
+   from lostml.tree import DecisionTree
    import numpy as np
 
    # Linear Regression
@@ -68,6 +71,11 @@ Here's a quick taste of what lostml can do:
    model = LinearRegression()
    model.fit(X, y)
    predictions = model.predict(X)
+
+   # Decision Tree
+   tree = DecisionTree(max_depth=5, criterion='gini')
+   tree.fit(X_train, y_train)
+   predictions = tree.predict(X_test)
 
    # K-Nearest Neighbors
    knn = KNN(n_neighbors=3)

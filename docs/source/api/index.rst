@@ -20,6 +20,14 @@ Neighbors
 
    knn
 
+Tree-Based Models
+-----------------
+
+.. toctree::
+   :maxdepth: 2
+
+   decision_tree
+
 Base Classes
 ------------
 

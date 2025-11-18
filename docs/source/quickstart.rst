@@ -147,6 +147,75 @@ To convert probabilities to class predictions:
    predictions = (probabilities >= 0.5).astype(int)
    print(predictions)
 
+Decision Tree
+-------------
+
+Decision Tree is a tree-based algorithm that makes decisions by recursively splitting data based on feature values.
+
+Classification
+~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+   from lostml.tree import DecisionTree
+   import numpy as np
+
+   # Classification data
+   X = np.array([[1, 2], [2, 3], [3, 4], [5, 6], [6, 7]])
+   y = np.array([0, 0, 1, 1, 1])
+
+   # Initialize and train
+   tree = DecisionTree(max_depth=5, criterion='gini')
+   tree.fit(X, y)
+
+   # Predict
+   predictions = tree.predict(X)
+   print(predictions)
+
+Parameters:
+   - ``max_depth``: Maximum tree depth (None = unlimited)
+   - ``min_samples_split``: Minimum samples to split a node (default: 2)
+   - ``min_samples_leaf``: Minimum samples in a leaf (default: 1)
+   - ``criterion``: 'gini' for classification, 'mse' for regression
+
+Regression
+~~~~~~~~~~
+
+.. code-block:: python
+
+   from lostml.tree import DecisionTree
+   import numpy as np
+
+   # Regression data
+   X = np.array([[1], [2], [3], [5], [6], [7]])
+   y = np.array([2, 4, 6, 10, 12, 14])
+
+   # Initialize for regression
+   tree = DecisionTree(max_depth=3, criterion='mse')
+   tree.fit(X, y)
+
+   # Predict
+   predictions = tree.predict(X)
+   print(predictions)
+
+Controlling Tree Growth
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+   # Shallow tree (prevents overfitting)
+   tree_shallow = DecisionTree(max_depth=3, min_samples_split=5)
+   
+   # Deep tree (may overfit)
+   tree_deep = DecisionTree(max_depth=10)
+   
+   # Balanced tree
+   tree_balanced = DecisionTree(
+       max_depth=5,
+       min_samples_split=2,
+       min_samples_leaf=1
+   )
+
 K-Nearest Neighbors (KNN)
 -------------------------
 
@@ -236,7 +305,13 @@ Tips and Best Practices
    - Lasso: Use when you want feature selection
    - Elastic Net: Best of both worlds
 
-5. **Data Preprocessing**: Always normalize/standardize features for best results.
+5. **Decision Tree Parameters**:
+   - ``max_depth``: Start with 5-10. Too deep = overfitting
+   - ``min_samples_split``: Higher = simpler trees (default: 2)
+   - ``min_samples_leaf``: Higher = more conservative (default: 1)
+   - Use ``'gini'`` for classification, ``'mse'`` for regression
+
+6. **Data Preprocessing**: Always normalize/standardize features for best results (especially for linear models and KNN).
 
 Next Steps
 ----------

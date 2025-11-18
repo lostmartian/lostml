@@ -20,6 +20,14 @@ Classification
 - ✅ **Logistic Regression** - Binary classification using sigmoid function
 - ✅ **K-Nearest Neighbors (KNN)** - Instance-based classification with distance metrics
 
+Tree-Based Models
+~~~~~~~~~~~~~~~~~
+
+- ✅ **Decision Tree** - Classification and regression using recursive splitting
+  - *Status*: Implemented
+  - *Use Cases*: Interpretable models, feature importance, non-linear relationships
+  - *Features*: Supports both Gini (classification) and MSE (regression) criteria
+
 Utilities
 ~~~~~~~~~
 
@@ -30,11 +38,6 @@ Planned Algorithms 🚧
 
 Tree-Based Models
 ~~~~~~~~~~~~~~~~~
-
-- ⏳ **Decision Tree** - Classification and regression using recursive splitting
-  - *Status*: Planned
-  - *Priority*: High
-  - *Use Cases*: Interpretable models, feature importance, non-linear relationships
 
 - ⏳ **Random Forest** - Ensemble of decision trees
   - *Status*: Planned
@@ -70,6 +73,6 @@ Additional Algorithms
 Implementation Status
 ----------------------
 
-**Current Progress**: 6/12 algorithms implemented (50%)
+**Current Progress**: 7/12 algorithms implemented (58%)
 
-**Next Up**: Decision Tree → K-Means → Random Forest → PCA
+**Next Up**: K-Means → Random Forest → PCA

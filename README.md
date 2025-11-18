@@ -7,6 +7,7 @@
 ```python
 from lostml import LinearRegression, LogisticRegression
 from lostml.neighbors import KNN
+from lostml.tree import DecisionTree
 import numpy as np
 
 # Linear Regression
@@ -15,6 +16,11 @@ y = np.array([2, 3, 4])
 model = LinearRegression(learning_rate=0.01, n_iterations=1000)
 model.fit(X, y)
 predictions = model.predict(X)
+
+# Decision Tree
+tree = DecisionTree(max_depth=5, criterion='gini')
+tree.fit(X_train, y_train)
+predictions = tree.predict(X_test)
 
 # K-Nearest Neighbors
 knn = KNN(n_neighbors=5, metric='euclidean')
@@ -44,13 +50,15 @@ pip install -e .
 - ✅ Logistic Regression
 - ✅ K-Nearest Neighbors (KNN)
 
+**Tree-Based Models**
+- ✅ Decision Tree (Classification & Regression)
+
 **Utilities**
 - ✅ Distance metrics (Euclidean, Manhattan)
 
 ### Coming Soon 🚧
 
 **Tree-Based Models**
-- ⏳ Decision Tree (Classification & Regression)
 - ⏳ Random Forest (Classification & Regression)
 
 **Unsupervised Learning**
