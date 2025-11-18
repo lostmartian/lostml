@@ -38,7 +38,7 @@ pip install -e .
 
 ## 📚 Documentation
 
-Full documentation with examples and API reference: **[View Docs](https://yourusername.github.io/lostml/)**
+Full documentation with examples and API reference: **[View Docs](https://lostml.sahilgangurde.me)**
 
 ## 🧪 Testing
 

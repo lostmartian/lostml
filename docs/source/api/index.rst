@@ -1,13 +1,24 @@
 API Reference
 =============
 
-This section contains the API reference for all classes and functions in lostml.
+This section provides detailed API documentation for all classes and functions in lostml.
+
+Linear Models
+-------------
 
 .. toctree::
    :maxdepth: 2
 
    linear_regression
    logistic_regression
+
+Neighbors
+---------
+
+.. toctree::
+   :maxdepth: 2
+
+   knn
 
 Base Classes
 ------------
@@ -17,3 +28,12 @@ Base Classes
    :undoc-members:
    :show-inheritance:
 
+Utilities
+---------
+
+Distance Metrics
+~~~~~~~~~~~~~~~~
+
+.. automodule:: lostml.utils.distances
+   :members:
+   :undoc-members:
