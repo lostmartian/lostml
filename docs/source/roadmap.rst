@@ -28,6 +28,11 @@ Tree-Based Models
   - *Use Cases*: Interpretable models, feature importance, non-linear relationships
   - *Features*: Supports both Gini (classification) and MSE (regression) criteria
 
+- ✅ **Random Forest** - Ensemble of decision trees with bootstrap aggregating
+  - *Status*: Implemented
+  - *Use Cases*: General-purpose classification and regression, handles overfitting well
+  - *Features*: Bootstrap sampling, random feature selection, majority voting (classification), averaging (regression)
+
 Utilities
 ~~~~~~~~~
 
@@ -35,14 +40,6 @@ Utilities
 
 Planned Algorithms 🚧
 ---------------------
-
-Tree-Based Models
-~~~~~~~~~~~~~~~~~
-
-- ⏳ **Random Forest** - Ensemble of decision trees
-  - *Status*: Planned
-  - *Priority*: High
-  - *Use Cases*: General-purpose classification and regression, handles overfitting well
 
 Unsupervised Learning
 ~~~~~~~~~~~~~~~~~~~~~
@@ -73,6 +70,6 @@ Additional Algorithms
 Implementation Status
 ----------------------
 
-**Current Progress**: 7/12 algorithms implemented (58%)
+**Current Progress**: 8/12 algorithms implemented (67%)
 
-**Next Up**: K-Means → Random Forest → PCA
+**Next Up**: K-Means → PCA → Naive Bayes

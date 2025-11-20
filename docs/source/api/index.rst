@@ -27,6 +27,7 @@ Tree-Based Models
    :maxdepth: 2
 
    decision_tree
+   random_forest
 
 Base Classes
 ------------
